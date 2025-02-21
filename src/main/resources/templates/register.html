@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="registerStyles.css">
+</head>
+<body>
+
+<form class="form" action="/auth/register" method="post">
+  <!-- CSRF Token -->
+  <input type="hidden" name="_csrf" value="${_csrf.token}">
+
+  <!-- Name Input -->
+  <div class="flex-column">
+    <label for="name">Full Name</label>
+  </div>
+  <div class="inputForm">
+    <input id="name" name="name" placeholder="Enter your full name" class="input" type="text" required>
+  </div>
+
+  <!-- Email Input -->
+  <div class="flex-column">
+    <label for="email">Email</label>
+  </div>
+  <div class="inputForm">
+    <input id="email" name="email" placeholder="Enter your Email" class="input" type="email" required>
+  </div>
+
+  <!-- Password Input -->
+  <div class="flex-column">
+    <label for="password">Password</label>
+  </div>
+  <div class="inputForm">
+    <input id="password" name="password" placeholder="Enter your Password" class="input" type="password" required>
+    <button type="button" class="toggle-password">
+      <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+        <path d="M12 4.5C7.305 4.5 3.17 7.11 1 12c2.17 4.89 6.305 7.5 11 7.5s8.83-2.61 11-7.5c-2.17-4.89-6.305-7.5-11-7.5zM12 18c-3.858 0-7.097-2.23-8.977-6C4.903 8.23 8.142 6 12 6c3.858 0 7.097 2.23 8.977 6C19.097 15.77 15.858 18 12 18zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Confirm Password Input -->
+  <div class="flex-column">
+    <label for="confirm-password">Confirm Password</label>
+  </div>
+  <div class="inputForm">
+    <input id="confirm-password" name="confirmPassword" placeholder="Confirm your Password" class="input" type="password" required>
+    <button type="button" class="toggle-password">
+      <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+        <path d="M12 4.5C7.305 4.5 3.17 7.11 1 12c2.17 4.89 6.305 7.5 11 7.5s8.83-2.61 11-7.5c-2.17-4.89-6.305-7.5-11-7.5zM12 18c-3.858 0-7.097-2.23-8.977-6C4.903 8.23 8.142 6 12 6c3.858 0 7.097 2.23 8.977 6C19.097 15.77 15.858 18 12 18zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" class="button-submit">Register</button>
+
+  <p class="p">Already have an account? <a href="login.html" class="span">Login</a></p>
+
+</form>
+
+<script src="register.js"></script>
+
+</body>
+</html>

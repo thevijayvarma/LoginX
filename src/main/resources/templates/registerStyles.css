@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form h2::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #3f51b5;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.form p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.flex-column {
+    margin-bottom: 5px;
+}
+
+.flex-column label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+.inputForm {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: calc(100% - 20px); /* Adjust for icon space */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    border-color: #3f51b5;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.button-submit {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-submit:hover {
+    background-color: #303f9f;
+}
+
+.p {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.span {
+    color: #3f51b5;
+    text-decoration: none;
+}
+
+.span:hover {
+    text-decoration: underline;
+}
